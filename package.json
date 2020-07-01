@@ -20,7 +20,7 @@
     "test": "yarn task test",
     "build": "yarn task build",
     "u": "yarn task server --ui --watch",
-    "a": "yarn task server --api --watch",
+    "a": "JWT_SECRET=blahblah yarn task server --api --watch",
     "ff": "yarn task format && yarn task lint",
     "dev": "run-p u a",
     "db": "node ./node_modules/db-migrate/bin/db-migrate"
