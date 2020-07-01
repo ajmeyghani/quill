@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "plugins": [
+      {
+        "transform": "@zerollup/ts-transform-paths",
+        "exclude": ["*"]
+      }
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["node_modules/*"],
+      "@hooks/*": ["hooks/*"],
+      "@models/*": ["models/*"],
+      "@services/*": ["services/*"],
+      "@plugins/*": ["plugins/*"],
+      "@src/*": ["./*"]
+    }
+  },
+  "include": ["src/**/*", "src/index.d.ts"],
+  "exclude": ["test", "src/**/*.test.ts"]
+}

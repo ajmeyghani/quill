@@ -1,0 +1,39 @@
+{
+  "name": "fullstack-ui",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@ajmey/toaster": "^0.5.0",
+    "@feathersjs/authentication-client": "^4.5.1",
+    "@feathersjs/feathers": "^4.5.1",
+    "@feathersjs/socketio-client": "^4.5.1",
+    "@sindresorhus/is": "^2.0.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "serialize-javascript": "^2.1.1",
+    "socket.io-client": "^2.3.0"
+  },
+  "scripts": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@rescripts/cli": "^0.0.13",
+    "react-test-renderer": "^16.12.0"
+  }
+}

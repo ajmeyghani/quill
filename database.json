@@ -1,0 +1,7 @@
+{
+  "dev": {
+    "driver": "mongodb",
+    "database": "quill",
+    "host": "localhost"
+  }
+}

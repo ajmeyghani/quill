@@ -1,0 +1,44 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 100,
+    "max": 5000
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "JWT_SECRET",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+    "oauth": {
+      "redirect": "http://localhost:3000",
+      "github": {
+        "key": "GITHUB_KEY",
+        "secret": "GITHUB_SECRET"
+      }
+    }
+  },
+  "mongodb": "mongodb://localhost:27017/quill",
+  "redis": {
+    "port": "6379",
+    "host": "127.0.0.1",
+    "password": ""
+  }
+}
