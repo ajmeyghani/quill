@@ -7,6 +7,8 @@
 - Make sure you have `nvm` installed.
 - Run `nvm use` in the root of the project to switch to the correct version of Node.
 - Run `yarn deps` to install all dependencies.
+- Install Redis: `brew install redis`
+- Start redis: `brew services start redis`
 - Run `yarn dev` to get started. Alternatively, you can run each process in a separate terminal tab using `yarn u` in one tab and `yarn a` in the other.
 
 ## Dev Tasks
